@@ -7,8 +7,8 @@ import { FaCircleCheck } from "react-icons/fa6";
 
 const Problem = () => {
   return (
-    <section className="mt-36 mb-26" name="problem">
-      <div className="md:flex gap-6 items-center px-24">
+    <section className="mt-36 mb-26" id="problem">
+      <div className="md:flex gap-6 items-center px-8 md:px-24">
         <div >
           <motion.div
             initial={{ opacity: 1 }}

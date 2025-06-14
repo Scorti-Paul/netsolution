@@ -1,6 +1,5 @@
 
 import React, { useState } from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -17,8 +16,8 @@ const Navbar = () => {
           <Image
           src="/logo.png"
           className="w-auto h-auto"
-          width={366}
-          height={292}
+          width={286}
+          height={192}
           alt="logo"
         />
         </div>
@@ -112,15 +111,9 @@ const Navbar = () => {
       </nav>
 
       {/* Mobile Nav */}
-      <nav className="lg:hidden  relative z-50">
-        <div className="flex justify-between items-center py-8 bg-black fixed top-0 w-full px-6">
-          <div
-            className={
-              "font-bold  fixed z-30 text-xl text-transparent bg-clip-text bg-gradient-to-r from-orange to-indigo item-start mb-4 mt-4"
-            }
-          >
-            PAUL AHORSU
-          </div>
+      <nav className="lg:hidden relative z-50 bg-white ">
+        <div className="flex justify-between items-center py-8 fixed top-0 w-full px-6 bg-white ">
+          
           <motion.div
             animate
             className="text-[#2B2F52] p-2 rounded-full z-30  fixed right-4 hover:cursor-pointer"
@@ -134,7 +127,7 @@ const Navbar = () => {
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                className="w-6 h-6"
+                className="w-10 h-10"
               >
                 <path
                   strokeLinecap="round"
@@ -150,7 +143,7 @@ const Navbar = () => {
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                className="w-6 h-6"
+                className="w-10 h-10"
               >
                 <path
                   strokeLinecap="round"
@@ -171,12 +164,12 @@ const Navbar = () => {
           className={
             !nav
               ? "hidden"
-              : "bg-gray-dark fixed w-full top-14 right-0 z-50 border-t border-l border-b border-slate-400 rounded-tl-lg rounded-bl-lg pl-6 py-6 pr-8"
+              : "bg-white h-screen fixed w-full top-14 right-0 z-50 border-l border-b border-slate-400 rounded-tl-lg rounded-bl-lg pl-6 py-6 pr-8"
           }
         >
-          <li className="py-1 mb-2">
+          <li className="py-3 mb-2">
             <Link
-              className="text-[#2B2F52] py-2 hover:text-[#2B2F52]"
+              className="text-[#2B2F52] py-2 text-2xl leading-3 pb-2 hover:text-[#2B2F52]"
               to="home"
               activeClass="active"
               onClick={handleClose}
@@ -189,9 +182,9 @@ const Navbar = () => {
               Home
             </Link>
           </li>
-          <li className="py-1 mb-2">
+          <li className="py-3 mb-2">
             <Link
-              className="text-[#2B2F52] py-2 hover:text-[#2B2F52]"
+              className="text-[#2B2F52] py-2 text-2xl leading-3 pb-2 hover:text-[#2B2F52]"
               to="problem"
               activeClass="active"
               onClick={handleClose}
@@ -204,9 +197,9 @@ const Navbar = () => {
               Problem Statement
             </Link>
           </li>
-          <li className="py-1 mb-2">
+          <li className="py-3 mb-2">
             <Link
-              className="text-[#2B2F52] py-2 hover:text-[#2B2F52]"
+              className="text-[#2B2F52] py-2 text-2xl leading-3 pb-2 hover:text-[#2B2F52]"
               to="proposed"
               activeClass="active"
               spy={true}
@@ -219,9 +212,9 @@ const Navbar = () => {
               Proposed Solution
             </Link>
           </li>
-          <li className="py-1 mb-2">
+          <li className="py-3 mb-2">
             <Link
-              className="text-[#2B2F52] py-2 hover:text-[#2B2F52]"
+              className="text-[#2B2F52] py-2 text-2xl leading-3 pb-2 hover:text-[#2B2F52]"
               to="technologies"
               activeClass="active"
               spy={true}
@@ -234,9 +227,9 @@ const Navbar = () => {
               Technologies Involved
             </Link>
           </li>
-          <li className="py-1 mb-2">
+          <li className="py-3 mb-2">
             <Link
-              className="text-[#2B2F52] py-2 hover:text-[#2B2F52]"
+              className="text-[#2B2F52] py-2 text-2xl leading-3 pb-2 hover:text-[#2B2F52]"
               to="impact"
               activeClass="active"
               spy={true}
@@ -250,9 +243,9 @@ const Navbar = () => {
             </Link>
           </li>
 
-          <li className="py-1 mb-2">
+          <li className="py-3 mb-2">
             <Link
-              className="text-[#2B2F52] py-2 hover:text-[#2B2F52]"
+              className="text-[#2B2F52] py-2 text-2xl leading-3 pb-2 hover:text-[#2B2F52]"
               to="contact"
               activeClass="active"
               spy={true}
@@ -264,30 +257,6 @@ const Navbar = () => {
             >
               Contact
             </Link>
-          </li>
-          <li className="mt-4">
-            <ul className="flex">
-              <li className="">
-                <a
-                  className="text-[#2B2F52] hover:text-slate-200"
-                  href="https://linkedin.com/in/paul-ahorsu-5ab850169"
-                  target="_blank"
-                  onClick={handleClose}
-                >
-                  <FaLinkedin size={22} />
-                </a>
-              </li>
-              <li className="ml-2">
-                <a
-                  className="text-[#2B2F52] hover:text-slate-200"
-                  href="https://github.com/Scorti-Paul"
-                  target="_blank"
-                  onClick={handleClose}
-                >
-                  <FaGithub size={22} />
-                </a>
-              </li>
-            </ul>
           </li>
         </motion.ul>
       </nav>

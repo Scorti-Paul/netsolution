@@ -5,12 +5,12 @@ import Image from "next/image";
 
 const Transformation = () => {
   return (
-    <section name="impact">
-      <div className="px-24 py-14 bg-transformation">
-        <div className="px-24">
+    <section id="impact">
+      <div className="px-8 md:px-24 py-14 bg-transformation">
+        <div className="md:px-24">
           <h3 className="text-3xl font-bold text-center ">Transforming Lives with Smarter Internet</h3>
           <p className="text-lg mb-8 text-center text-gray-500">With reliable and affordable internet access, rural communities in Africa can unlock:</p>
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             <div className="bg-white/40 rounded-2xl p-5 border border-gray-200">
               <Image
                 src="/learning.png"

@@ -8,11 +8,11 @@ import { FaCircleCheck } from "react-icons/fa6";
 const Proposed = () => {
   return (
     <section >
-      <div className="bg-gray-50" name="proposed">
-        <div className="px-24 py-24">
+      <div className="bg-gray-50" id="proposed">
+        <div className="px-8 md:px-24 py-24">
           <h3 className="text-3xl font-bold text-center">A Hybrid Tech Model for Rural Connectivity</h3>
           <p className="max-w-3xl text-center mx-auto mb-8 ">Our solution combines IoT-based mesh networks, 5G community hubs, and AI optimization to create a scalable, low-cost internet access system in rural Africa.</p>
-          <div className="grid grid-cols-3 max-w-6xl mx-auto gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-4">
             <div className="bg-white rounded-2xl pb-6">
               <Image
                 src="/5g.png"
@@ -25,7 +25,7 @@ const Proposed = () => {
                 <p className="text-base text-center text-gray-500">Deployed at schools, clinics, or marketplaces to offer high-speed, long-range internet access to clusters of users.</p>
               </div>
             </div>
-            <div className="bg-white rounded-2xl">
+            <div className="bg-white rounded-2xl pb-6">
               <Image
                 src="/iot.png"
                 alt="problem statement"

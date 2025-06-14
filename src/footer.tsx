@@ -9,7 +9,7 @@ const Footer = () => {
   const dateYear = new Date();
   const currentYear = dateYear.getFullYear();
   return (
-    <section className="pb-4 flex flex-col items-center justify-center pt-[6rem]" name="footer">
+    <section className="pb-4 flex flex-col items-center justify-center pt-[6rem]" id="footer">
       <div className="pb-3">
         <Image
           src="/logo.png"
@@ -20,7 +20,7 @@ const Footer = () => {
         />
       </div>
       <div>
-        <p className="text-xl text-center tracking-wide font-light">
+        <p className="text-lg md:text-xl text-gray-500 text-center tracking-wide font-light">
           We’re open to collaborations, feedback, and further development ideas.
         </p>
         <ul className="flex justify-center items-center gap-5 pt-4 pb-6">
