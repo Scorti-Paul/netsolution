@@ -14,12 +14,11 @@ const Navbar = () => {
       <nav className="hidden lg:flex lg:justify-between lg:bg-white lg:items-center lg:px-24 lg:py-5">
         <div>
           <Image
-          src="/logo.png"
-          className="w-auto h-auto"
-          width={286}
-          height={192}
-          alt="logo"
-        />
+            src="/logo.png"
+            width={286}
+            height={192}
+            alt="logo"
+          />
         </div>
         <ul className="flex items-center gap-8">
           <li className="">
@@ -112,8 +111,17 @@ const Navbar = () => {
 
       {/* Mobile Nav */}
       <nav className="lg:hidden relative z-50 bg-white ">
-        <div className="flex justify-between items-center py-8 fixed top-0 w-full px-6 bg-white ">
+        <div className="flex justify-between items-center md:py-8 fixed top-0 w-full px-8 md:px-6 bg-white ">
           
+            <div className="py-2">
+              <Image
+                src="/logo.png"
+                width={180}
+                height={192}
+                alt="logo"
+              />
+            </div>
+            
           <motion.div
             animate
             className="text-[#2B2F52] p-2 rounded-full z-30  fixed right-4 hover:cursor-pointer"
@@ -164,12 +172,12 @@ const Navbar = () => {
           className={
             !nav
               ? "hidden"
-              : "bg-white h-screen fixed w-full top-14 right-0 z-50 border-l border-b border-slate-400 rounded-tl-lg rounded-bl-lg pl-6 py-6 pr-8"
+              : "bg-white h-screen fixed w-full top-14 right-0 z-50 pl-8 py-6 pr-8"
           }
         >
           <li className="py-3 mb-2">
             <Link
-              className="text-[#2B2F52] py-2 text-2xl leading-3 pb-2 hover:text-[#2B2F52]"
+              className="py-2 text-2xl leading-3 pb-2 hover:text-[#2B2F52]"
               to="home"
               activeClass="active"
               onClick={handleClose}
@@ -184,7 +192,7 @@ const Navbar = () => {
           </li>
           <li className="py-3 mb-2">
             <Link
-              className="text-[#2B2F52] py-2 text-2xl leading-3 pb-2 hover:text-[#2B2F52]"
+              className="py-2 text-2xl leading-3 pb-2 hover:text-[#2B2F52]"
               to="problem"
               activeClass="active"
               onClick={handleClose}
@@ -199,7 +207,7 @@ const Navbar = () => {
           </li>
           <li className="py-3 mb-2">
             <Link
-              className="text-[#2B2F52] py-2 text-2xl leading-3 pb-2 hover:text-[#2B2F52]"
+              className="py-2 text-2xl leading-3 pb-2 hover:text-[#2B2F52]"
               to="proposed"
               activeClass="active"
               spy={true}
@@ -214,7 +222,7 @@ const Navbar = () => {
           </li>
           <li className="py-3 mb-2">
             <Link
-              className="text-[#2B2F52] py-2 text-2xl leading-3 pb-2 hover:text-[#2B2F52]"
+              className="py-2 text-2xl leading-3 pb-2 hover:text-[#2B2F52]"
               to="technologies"
               activeClass="active"
               spy={true}
@@ -229,7 +237,7 @@ const Navbar = () => {
           </li>
           <li className="py-3 mb-2">
             <Link
-              className="text-[#2B2F52] py-2 text-2xl leading-3 pb-2 hover:text-[#2B2F52]"
+              className="py-2 text-2xl leading-3 pb-2 hover:text-[#2B2F52]"
               to="impact"
               activeClass="active"
               spy={true}
@@ -245,7 +253,7 @@ const Navbar = () => {
 
           <li className="py-3 mb-2">
             <Link
-              className="text-[#2B2F52] py-2 text-2xl leading-3 pb-2 hover:text-[#2B2F52]"
+              className="py-2 text-2xl leading-3 pb-2 hover:text-[#2B2F52]"
               to="contact"
               activeClass="active"
               spy={true}
